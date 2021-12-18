@@ -3,9 +3,22 @@ import logo from './logo.svg';
 import './App.css';
 
 
-var arrow="<"
-function App(props) {
-  const employeedetails=props.emp;
+var arrow="<";
+
+const employeedetails={
+  name:"Satheesh",
+  id:40106,
+  Appointment:"9:00(24-05-2016)",
+  Email:"satish9bollineni@gmail.com",
+  phone:"+919704593317",
+  status:'In Progress',
+  Door:'Mark',
+  Time:"10:30(25-05-2016)",
+  itemname:"Boltart Bossebessen",
+  description:"Get ready for treatment and it will reduce the pain"
+
+};
+function App() {
   
   return (
     <div className="site-container">
@@ -18,7 +31,7 @@ function App(props) {
     </div>
     
     <div className="customer-info main-div">
-      <p><b>Appointment</b>{employeedetails.Appointment} </p>
+      <p><b>Appointment On</b>{employeedetails.Appointment} </p>
       <p><b>Email:</b>{employeedetails.Email} </p>
       <p><b>Phone</b>{employeedetails.phone} </p>
     </div>
